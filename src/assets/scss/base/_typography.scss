@@ -1,0 +1,106 @@
+/* Typography */
+
+body {
+	margin: 0;
+	padding: 0;
+	line-height: 1.78;
+	font-size: 15px;
+	font-weight: 400;
+	font-family: $font-primary;
+	color: $color-light;
+	letter-spacing: 0.01em;
+	@include media('<sm') {
+		line-height: 1.7;
+	}
+}
+ul li {
+	list-style: none;
+	font-size: $font-size-menu;
+	font-weight: $font-normal;
+}
+a {
+	color: inherit;
+	transition: all 0.3s ease;
+	
+	&:hover {
+		text-decoration: none;
+		background-color: none !important;
+		color: $color-primary;
+	}
+}
+
+a,
+input,
+textarea,
+select {
+	outline: none;
+}
+
+$heading-fontsize: (
+	'h1': 40px,
+	'h2': 36px,
+	'h3': 32px,
+	'h4': 26px,
+	'h5': 20px,
+	'h6': 18px
+);
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: $font-semibold;
+	line-height: 1.4em;
+	color: $color-dark-1;
+	font-family: $font-primary;
+	letter-spacing: 0.02em;
+}
+
+@each $val, $key in $heading-fontsize {
+	#{$val} {
+		font-size: $key;
+	}
+}
+h3,
+h1,
+h2,
+h3 {
+	margin-bottom: 14px;
+}
+h4,
+h5,
+h6 {
+	// margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+p {
+	font-family: $font-secondary;
+	color: $color-gray-1;
+	// font-style: $font-style-i;
+	font-size: $font-size-base;
+}
+
+span {
+	text-align: center;
+	font-family: $font-primary;
+	color: $color-dark-1;
+	font-size: $font-size-button;
+}
+
+img {
+	max-width: 100%;
+}
+
+abbr {
+	color: #67dee8;
+	border-width: 2px
+}
+
+mark,
+.mark {
+	background-color: $color-primary;
+	color: $color-light;
+}

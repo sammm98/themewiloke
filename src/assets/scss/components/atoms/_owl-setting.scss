@@ -1,0 +1,74 @@
+.owl-theme {
+	.owl-pagination {
+		margin-top: 38px;
+		.owl-page {
+			&.active {
+				span {
+					background-color: $color-primary;
+					transform: scale(1.5);
+				}
+			}
+			span {
+				width: 8px;
+				height: 8px;
+				background-color: $color-gray-2;
+				transform: scale(1);
+				transition: all .3s ease;
+			}
+			&:hover span {
+				background-color: $color-primary;
+			}
+		}
+	}
+}
+.owl-theme .owl-controls {
+	margin-top: 0;
+}
+.owl-buttons {
+	@include media('<md') {
+		padding-bottom: 50px;
+	}
+	> div {
+		display: inline-block;
+		margin: 5px;
+		@include media('>md') {
+			position: absolute;
+			top: 50%;
+			z-index: 9999;
+			transform: translate(0, -50%);
+		}
+	}
+	.owl-prev {
+		left: 35px;
+		@include media('<1400px') {
+			left: 0;
+		}
+	}
+	.owl-next {
+		right: 35px;
+		@include media('<1400px') {
+			right: 0;
+		}
+	}
+	i {
+		display: inline-block;
+		width: 64px;
+		height: 64px;
+		background-color: rgba(#fff, .1);
+		border-radius: 50%;
+		line-height: 64px;
+		text-align: center;
+		font-size: 30px;
+		color: $color-white;
+		transition: all .3s ease;
+		&:hover {
+			background-color: $color-primary;
+		}
+		@include media('<1400px') {
+			width: 50px;
+			height: 50px;
+			line-height: 50px;
+			font-size: 24px;
+		}
+	}
+} 

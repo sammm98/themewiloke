@@ -1,0 +1,74 @@
+.theme {
+    .theme-image {
+        img {
+            width: 100%;
+        }
+    }
+    .theme-body {
+        .btn-group {
+            overflow: hidden;
+            .btn {
+                margin-right: 10px;
+                padding: 10px 30px 10px 50px;
+                border-radius: 30px;
+                text-transform: uppercase;
+                font-size: 12px;
+                position: relative;
+
+                i {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    font-size: 15px;
+                    border-radius: 15px 0 0 32px;
+                    height: 46px;
+                    width: 46px;
+                    line-height: 46px;
+                }
+            }
+            .btn-dark {
+                i {
+                    background-color:  rgba(255, 255, 255, 0.05);
+                }
+            }
+            .btn-primary {
+                i {
+                    background-color:  rgba(0, 0, 0, 0.05);
+                }
+            }
+            .btn-red {
+                background-color:  #f08989;
+                i {
+                    background-color:  rgba(0, 0, 0, 0.05);
+                }
+            }
+        }
+        .price-lg {
+            span {
+                float: left;
+                font-size: 12px;
+                font-weight: bold;
+            }
+           h1 {
+               
+           }
+        }
+    }
+}
+.feature-title {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.list-feature {
+    margin-left: 100px;
+    li {
+        color: #767676;
+        width: 50%;
+        float: left;
+        font-size: 14px;
+        line-height: 24px;
+        list-style-type: circle;
+    }
+}

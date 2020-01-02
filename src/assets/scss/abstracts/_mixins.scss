@@ -1,0 +1,28 @@
+@mixin placeholder {
+
+	$placeholders: ":-webkit-input" ":-moz" "-moz" "-ms-input";
+
+	@each $placeholder in $placeholders {
+
+		&:#{$placeholder}-placeholder {
+
+	  		@content;
+
+		}
+	}
+}
+
+// background gradient color
+@mixin bgGradient($deg, $colorStart, $colorEnd) {
+	background-image: linear-gradient( $deg, $colorStart 0%, $colorEnd 100%);
+}
+
+
+@mixin textGradient($color1, $color2) {
+	display: inline-block;
+	background: -moz-linear-gradient(left, $color1 0%, $color2 100%);
+	background: -webkit-linear-gradient(left, $color1 0%, $color2 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: $color1;
+}

@@ -1,0 +1,135 @@
+.menu-mobile-btn {
+    margin-top: -10px;
+    position: relative;
+    display: none;
+    border-radius: 38px;
+    color: $color-white;
+    height: 38px;
+    width: 38px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: all .3s ease;
+    font-weight: $font-light;
+    z-index: 9;
+    margin-left: 60px;
+    span {
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 18px;
+        height: 2px;
+        background-color: $color-white;
+
+        &::before,
+        &::after {
+            position: inherit;
+            margin: inherit;
+            left: inherit;
+            width: inherit;
+            height: inherit;
+            background-color: inherit;
+            content: " ";
+        }
+        &::before {
+            top: -5px;
+        }
+        &::after {
+            top: 5px;
+        }
+    }
+    @include media('<1100px') {
+        display: inline-block;
+    }
+}
+.menu__mobile-toggle
+{
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: $color-dark-1;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 300px;
+    height: 100%;
+    transition: all .3s ease;
+    transform: translate( 100%, 0);
+    .menu__mobile-inner {
+        text-align: center;
+        position: relative;
+        min-height: 100%;
+
+    }
+    .menu__close {
+        span {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            top: 40px;
+            right: 20px;
+            cursor: pointer;
+            z-index: 9;
+            // background-color: $color-white;
+
+            &::before,
+            &::after {
+                content: " ";
+                position: absolute;
+                width: 20px;
+                height: 2px;
+                opacity: .5;
+                background-color: $color-white;
+                @extend %absolute-center;
+                
+            }
+            &::before {
+                transform: rotate(45deg);
+            }
+            &::after {
+                transform: rotate(-45deg);
+            }
+            
+        }
+    }
+    .tb {
+        height: 100vh;
+
+    }
+    .menu__list {
+        .menu__item {
+            margin-right: 0;
+            margin-bottom: 30px;
+            float: none ; 
+        }
+    }
+    .search__box {
+        text-align: center;
+        position: absolute;
+        right: 30px;
+        left: 30px;
+        bottom: 30px;
+        .widget__search {
+            display: inline-block;
+            .search-field {
+                width: 100%;
+                z-index: 2;
+                cursor: text;
+                // margin: 0 20px;
+
+                @include placeholder{
+                    color: $color-white;
+                };
+            }
+
+        }
+    }
+}
+
+.menu-mobile-active {
+    transform: translate(0 , 0);
+}

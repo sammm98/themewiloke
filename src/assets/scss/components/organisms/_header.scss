@@ -1,0 +1,135 @@
+
+.header__page {
+    .tb {
+        width: 100%;
+        height: 90px;
+        padding: 44px 80px;
+
+        @include media('<1440px') {
+            padding: 20px 40px;
+        }
+        @include media('<1024px') {
+            padding: 10px 15px;
+        }
+        .tb__cell-10 {
+            width: 83%;
+
+            .header__nav {
+                vertical-align: middle;
+                float: right;
+                margin-right: 35px;
+
+                .menu {
+                    @include media('<1100px') {
+                        display: none;
+                    }
+                }
+                .cart {
+                    text-transform: uppercase;
+                    font-size: 11px;
+                    margin-top: -4px;
+                    letter-spacing: .1em;
+                    &:hover a {
+                        color: $color-primary;
+                    }
+                    span {
+                        color: $color-white;
+                    }
+                    i {
+                        font-size: 18px;
+                        color: $color-primary;
+                    }
+                }
+                .header__search {
+                    margin-top: -10px !important;
+                    margin-left: 60px;
+                    @include media('<1100px') {
+                        display: none;
+                    }
+                }
+                
+            }
+        }
+    }
+    
+    .left {
+        float: left;
+    }
+    .logo img{
+        vertical-align: middle;
+        height: auto;
+    }
+    
+}
+.menu__item {
+    vertical-align: middle;
+    float: left;
+    text-transform: uppercase;
+    margin-right: 60px;
+    position: relative;
+    
+    a {
+        padding-top: 10px;
+        &:hover{
+            border-top: 2px solid $color-primary ;
+            color: $color-primary;
+        }
+    }
+    
+}
+.widget__search {
+    .search-form {
+        position: relative;
+        // width: 200px;
+        .search-field {
+            position: relative;
+            border-radius: 38px;
+            color: $color-white;
+            height: 38px;
+            width: 38px;
+            background-color: rgba(255, 255, 255, 0.15);
+            border: none;
+            cursor: pointer;
+            box-sizing: border-box;
+            transition: all .3s ease;
+            font-weight: $font-light;
+            z-index: 9;
+            &:focus {
+                width: 200px;
+                padding: 0 53px 0 15px;
+                z-index: 1;
+                cursor: text;
+                color: #fff;
+                background-color: rgba(#fff, .15);
+                @include placeholder {
+                    color: #fff;
+                }
+                @include media('<lg') {
+                    width: 160px;
+                }
+            }
+        }
+        input::placeholder {
+            color: transparent;
+          }
+          
+        input:-ms-input-placeholder { 
+            color: transparent;
+          }
+          
+        input::-ms-input-placeholder { 
+            color: transparent;
+          }
+        
+        .search-submit {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-family: "linea";
+            background: none;
+            font-size: $font-size-normal;
+            z-index: 5;
+        }
+    }
+}

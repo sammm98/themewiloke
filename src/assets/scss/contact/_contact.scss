@@ -1,0 +1,31 @@
+.contact__text {
+    font-family: $font-tertiary;
+    text-align: center;
+    
+}
+.submit {
+    margin-top: 30px;
+    text-align: center;
+    input {
+        display: inline-block;
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    .message {
+        width: 50%;
+        margin-bottom: 30px;
+        // display: block;
+    }
+    button {
+        padding: 7 30px !important;
+        margin: 0 auto;
+        display: block;
+        position: relative;
+        i {
+            position: absolute;
+            left: 10px;
+            font-size: 15px;
+            
+        }
+    }
+}

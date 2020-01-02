@@ -1,0 +1,21 @@
+
+// Absolute
+%absolute-center {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+%absolute-center-transform {
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translateY(-50%) translateX(-50%);
+}
+// Transition
+%transition-ease {
+	transition: all .3s ease;
+}

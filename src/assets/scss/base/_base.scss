@@ -1,0 +1,76 @@
+
+* {
+	margin: 0;
+	padding: 0;
+}
+.clearfix::after {
+	content: " ";
+	clear: both;
+	display: block;
+}
+// tb
+.tb {
+	display: table;
+	vertical-align: middle;
+	width: 100%;
+
+	&__cell {
+		display: table-cell !important;
+		vertical-align: middle;
+	}
+}
+
+// btn
+.btn-primary {
+	background-color: $color-primary;
+}
+.btn--white {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+ .btn {
+	position: relative;
+	display: inline-block;
+	border-radius: 46px;
+	text-transform: uppercase;
+	border:none;
+	text-align: center;
+	font-size: 12px;
+	padding: 10px 40px;
+	font-weight: $font-bold;          
+}
+button {
+	outline: none !important;
+	border: none;
+}
+.text-center {
+	text-align: center;
+}
+.icon {
+	display: inline-block;
+}
+// pt
+.pb0 {
+	padding-bottom: 0 !important;
+}
+.pb20 {
+	padding-bottom: 20px !important;
+}
+.pt10 {
+	padding-top: 10px !important;
+}
+.p100 {
+	padding: 100px 0 !important;
+}
+.p2080 {
+	padding: 20px 80px !important;
+}
+
+.pt70 {
+	padding-top: 70px !important;
+}
+
+// zindex
+.z10 {
+	z-index: 10 !important;
+}

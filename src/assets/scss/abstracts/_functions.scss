@@ -1,0 +1,4 @@
+// tinh toan size image
+@function mathSizeImage($height , $width) {
+    @return $height/$width * 100%;
+}

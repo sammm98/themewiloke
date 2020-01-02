@@ -1,0 +1,40 @@
+.testimonial {
+    &_user {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        padding-bottom: 30px;
+        overflow: hidden; 
+        img {
+            border-radius: 50%;
+            height: 72px;
+            float: left;
+            margin-right: 20px;
+        }
+        h6 {
+            color: $color-white;
+            font-size: $font-size-text;
+            text-transform: uppercase;
+        }
+        a {
+            font-size: $font-size-base;
+            color: $color-light-1;
+        }
+        
+    }
+
+    &_quote {
+        padding-top: 55px;
+        
+        p {
+            color: $color-light-1;
+            font-family: $font-primary;
+            font-size: $font-size-normal;
+        }
+        .icon-quote {
+            color: $color-light-1;
+            line-height: 0;
+            font-size: 48px;
+            font-family: $font-tertiary;
+        }
+    }
+}
+

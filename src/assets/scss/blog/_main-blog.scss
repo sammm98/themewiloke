@@ -1,0 +1,33 @@
+.widget__blog {
+    .widget {
+        margin-bottom: 50px;
+        .product {
+            border: 5px solid $color-light-1;
+        }
+        .list__tag {
+            a:not(:last-child):after {
+                content: ",";
+            }
+        }
+    }
+  
+}
+.paginations {
+    text-align: center !important;
+    a {
+        text-align: center;
+        color: $color-dark-2;
+        display: inline-block;
+        width: 42px;
+        height: 42px;
+        line-height: 42px;
+        border-radius: 50%;
+        
+    }
+    a.active {
+        color: $color-white;
+        font-size: $font-size-normal;
+        background-color: $color-primary;
+    }
+
+}

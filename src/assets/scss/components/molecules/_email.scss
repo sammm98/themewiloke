@@ -1,0 +1,58 @@
+
+.newsletter {
+    text-align: right;
+    @include media('<md') {
+        text-align: left;
+    }
+}
+.image-arrow {
+    transform: translate(-55px , 30px);
+    float: left;
+    margin-right: 30px;
+
+    @include media('<1200px') {
+        float: none;
+        display: none;
+    }
+}
+.ip-email {
+
+    max-width: 430px;
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    
+    input {
+        background-color: none !important;
+        color: $color-white;
+        border-radius: 30px;
+        padding-right: 80px;
+        width: 100%;
+    }
+    input::placeholder {
+        color: $color-white;
+      }
+      
+    input:-ms-input-placeholder { 
+       color: $color-white;
+      }
+      
+    input::-ms-input-placeholder { 
+       color: $color-white;
+      }
+    button {
+        background: none;
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 24px;
+        height: 24px;
+        line-height: 24px;
+        padding-left: 20px;
+        border-left: 1px solid $color-light-1;
+    }
+}
+.bg-color-gray {
+    background-color: rgba(24, 34, 36, 0.6) !important;
+}

@@ -1,0 +1,25 @@
+// section heading
+.section-heading__sub-title {
+	font-style: $font-style-i;
+    font-family: $font-tertiary;
+    font-size: $font-size-text;
+}
+.section-heading--center {
+    text-align: center;
+}
+
+.section-heading--left .icon-rounded {
+    float: left;
+    margin-right: 20px;
+}
+.section-heading--left .section-heading__title {
+    margin-top: -5px;
+    margin: 0;
+}
+.section-heading--style3 .section-heading__title {
+    color: $color-primary;
+    letter-spacing: .1em;
+}
+.section-heading--style3 .section-heading__sub-title {
+    color: $color-light-1;
+}
